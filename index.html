@@ -1,46 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Server – Issue Report</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server – Issue Report</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Server – Issue Report</h1>
+    <form action="https://formspree.io/f/xaqoggrz" method="POST">
+        <h1>Server – Issue Report</h1>
 
-  <form action="https://formspree.io/f/xaqoggrz" method="POST">
-    <label>
-      Minecraft Username<br>
-      <input type="text" name="username" required minlength="3" maxlength="16" pattern="^[A-Za-z0-9_]+$" title="Username can only contain letters, numbers, and underscores">
-    </label><br><br>
+        <label>
+            Minecraft Username
+            <input type="text" name="username" required minlength="3" maxlength="16"
+                   pattern="^[A-Za-z0-9_]+$"
+                   title="Username must be 3–16 characters and can only contain letters, numbers, and underscores">
+        </label>
 
-    <label>
-      Server<br>
-      <select name="server">
-        <option>Ultraservers</option>
-        <option>Kinetichosting</option>
-      </select>
-    </label><br><br>
+        <label>
+            Server
+            <select name="server">
+                <option>Server A</option>
+                <option>Server B</option>
+            </select>
+        </label>
 
-    <label>
-      Issue Type<br>
-      <select name="category">
-        <option>Bug</option>
-        <option>Crash</option>
-        <option>Performance</option>
-        <option>Gameplay</option>
-        <option>Other</option>
-      </select>
-    </label><br><br>
+        <label>
+            Issue Type
+            <select name="category">
+                <option>Bug</option>
+                <option>Crash</option>
+                <option>Performance</option>
+                <option>Gameplay</option>
+                <option>Other</option>
+            </select>
+        </label>
 
-    <label>
-      Description<br>
-      <textarea name="message" rows="6" required maxlength="500" pattern=".*\S.*" title="Message cannot be empty or whitespace only"></textarea>
-    </label><br><br>
+        <label>
+            Description
+            <textarea name="message" rows="6" required maxlength="500"
+                      pattern=".*\S.*"
+                      title="Message cannot be empty or whitespace only"></textarea>
+        </label>
 
-    <input type="text" name="_gotcha" style="display:none">
+        <!-- Anti-spam honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
 
-    <button type="submit">Submit Issue</button>
-  </form>
+        <button type="submit">Submit Issue</button>
+    </form>
 </body>
 </html>
