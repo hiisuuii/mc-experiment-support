@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Server – Issue Report</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Server – Issue Report</h1>
@@ -10,7 +11,7 @@
   <form action="https://formspree.io/f/xaqoggrz" method="POST">
     <label>
       Minecraft Username<br>
-      <input type="text" name="username" required>
+      <input type="text" name="username" required minlength="3" maxlength="16" pattern="^[A-Za-z0-9_]+$" title="Username can only contain letters, numbers, and underscores">
     </label><br><br>
 
     <label>
@@ -34,7 +35,7 @@
 
     <label>
       Description<br>
-      <textarea name="message" rows="6" required></textarea>
+      <textarea name="message" rows="6" required maxlength="500" pattern=".*\S.*" title="Message cannot be empty or whitespace only"></textarea>
     </label><br><br>
 
     <input type="text" name="_gotcha" style="display:none">
