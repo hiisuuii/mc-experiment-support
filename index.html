@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="https://formspree.io/f/xaqoggrz" method="POST">
+    <form id="issueForm" action="https://formspree.io/f/xaqoggrz" method="POST">
         <h1>Server – Issue Report</h1>
 
         <label>
@@ -48,5 +48,20 @@
 
         <button type="submit">Submit Issue</button>
     </form>
+
+    <form id="issueForm" action="https://formspree.io/f/xaqoggrz" method="POST">
+  ...
+</form>
+
+    <script>
+    document.getElementById('issueForm').addEventListener('submit', function(e) {
+        const message = this.message.value.trim();
+        if (!message) {
+            alert("Message cannot be empty or whitespace only");
+            e.preventDefault();
+        }
+    });
+    </script>
+    
 </body>
 </html>
