@@ -77,18 +77,15 @@ button:hover {
 }
 
 .form-footer {
-    margin-top: 1.5rem;
-    padding-top: 0.75rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-
-    border-top: 1px solid #2a2a2a;
 }
 
 .form-footer a {
     font-size: 0.75rem;
-    color: #777;
+    color: #555;
     text-decoration: none;
     transition: color 0.15s ease;
 }
@@ -96,4 +93,5 @@ button:hover {
 .form-footer a:hover {
     color: #aaa;
 }
+
 
