@@ -75,3 +75,26 @@ button {
 button:hover {
     background-color: #2563eb;
 }
+
+.form-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-button {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.9rem;
+    color: #ddd;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-button:hover {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
