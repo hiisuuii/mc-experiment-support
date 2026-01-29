@@ -80,12 +80,12 @@ button:hover {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 .form-footer a {
     font-size: 0.75rem;
-    color: #555;
+    color: #666;
     text-decoration: none;
     transition: color 0.15s ease;
 }
