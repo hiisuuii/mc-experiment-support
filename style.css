@@ -94,4 +94,9 @@ button:hover {
     color: #aaa;
 }
 
+.form-footer a + a::before {
+    content: "|";
+    color: #555;
+    margin-right: 0.75rem;
+}
 
