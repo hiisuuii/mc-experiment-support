@@ -75,3 +75,28 @@ button {
 button:hover {
     background-color: #2563eb;
 }
+
+.form-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form-footer a {
+    font-size: 0.75rem;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.form-footer a:hover {
+    color: #aaa;
+}
+
+.form-footer a + a::before {
+    content: "|";
+    color: #555;
+    margin-right: 0.75rem;
+}
+
